@@ -1,3 +1,14 @@
+Dead letter queue (DLQ)
+
+A DLQ is a standard concept in data engineering. It’s a mechanism for handling bad data without stopping your entire pipeline. When a record fails a validation check (e.g., a missing ID, a negative price), instead of throwing an error and crashing the job, you route that "dead" record to a separate location (the "queue" or "letter" file) for later inspection.
+
+The video below is a quick look at how Cymbal Superstore manages data validation using DLQs and how this is implemented in Dataflow and Serverless for Apache Spark.
+
+https://youtu.be/b7MXY2mxOoM?si=uIs59bfzLFaIrdCe
+
+https://www.skills.google/paths/16/course_templates/53/html_bundles/592803
+
+
 # Validate Data Quality for a Batch Data Pipeline using Serverless for Apache Spark 
 
 
